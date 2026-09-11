@@ -61,11 +61,11 @@ public class MainTest {
 
     @Test
     void testUnderscoreLength() {
-        assertEquals("Shall I compare thee to a summer's ___", Main.textUpTo(7));
+        assertEquals("Shall I compare thee to a summer’s ___", Main.textUpTo(7));
     }
 
     @Test
     void testStopOnNewLine() {
-        assertEquals("Shall I compare thee to a summer's day? \n____", Main.textUpTo(8));
+        assertEquals("Shall I compare thee to a summer’s day? \n____", Main.textUpTo(8));
     }
 }
