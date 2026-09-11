@@ -51,7 +51,7 @@ public class Main {
             }
             // wrong guess, add 1 to wrong counter
             else {
-                System.out.println("Error! The word was: " + wordToGuess(index));
+                System.out.println("Wrong! The word was: " + wordToGuess(index));
                 wrong = wrong + 1;
             }
             System.out.println();
