@@ -15,7 +15,7 @@ Requires Java 26. From the project folder:
 ./gradlew run -q --console=plain
 ```
 
-On Windows, use gradlew.bat instead of ./gradlew.
+On Windows, use `gradlew.bat` instead of `./gradlew`.
 
 ## How to Test
 
@@ -46,7 +46,7 @@ and extra spaces.
 
 ## Tests
 
-The tests are in `MainTester.java`. They check that:
+The tests are in `MainTest.java`. They check that:
 
 - right and wrong guesses are handled correctly
 - capital letters, punctuation, extra spaces, and empty guesses are handled

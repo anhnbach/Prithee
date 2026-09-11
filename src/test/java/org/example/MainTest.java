@@ -3,38 +3,40 @@ package org.example;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class MainTester {
+public class MainTest {
 
     @Test
     void testCorrect() {
-        assertEquals(true, Main.isCorrect("compare", 2));
+        assertTrue(Main.isCorrect("compare", 2));
     }
 
     @Test
     void testWrong() {
-        assertEquals(false, Main.isCorrect("hello", 2));
+        assertFalse(Main.isCorrect("hello", 2));
     }
 
     @Test
     void testCapital() {
-        assertEquals(true, Main.isCorrect("SHALL", 0));
+        assertTrue(Main.isCorrect("SHALL", 0));
     }
 
     @Test
     void testPunctuation() {
-        assertEquals(true, Main.isCorrect("day", 7));
-        assertEquals(true, Main.isCorrect("may", 23));
+        assertTrue(Main.isCorrect("day", 7));
+        assertTrue(Main.isCorrect("may", 23));
     }
 
     @Test
     void testSpaces() {
-        assertEquals(true, Main.isCorrect("  compare  ", 2));
+        assertTrue(Main.isCorrect("  compare  ", 2));
     }
 
     @Test
     void testEmptyGuess() {
-        assertEquals(false, Main.isCorrect("", 0));
+        assertFalse(Main.isCorrect("", 0));
     }
 
     @Test
@@ -56,7 +58,6 @@ public class MainTester {
     void testStopAtFirstWord() {
         assertEquals("_____", Main.textUpTo(0));
     }
-
 
     @Test
     void testUnderscoreLength() {
